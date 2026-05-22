@@ -16,22 +16,65 @@ body{
     background-color: rgb(0, 174, 255);
     border-radius: .5rem;
     box-shadow: inset;
+    display: flex; 
+    flex-direction: column;
 }
 .sidebar-button{
+    font-family: fantasy;
     text-decoration: none;
     font-weight: 600;
     margin-left: 5%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 10%;
+    margin-bottom: 10%;
     color: var(--text-color-2);
     background-color: var(--primary-bg-color);
-    width: 6rem;
-    height: 2rem;
+    width: 90%;
+    height: 8%;
     border: none;
-    outline-color: var(--accent-color);
-    outline-width: .2rem;
-    outline-style: auto;
+    border-radius: .3rem;
 }
 .sidebar-button:hover{
- color: var(--text-color-2);
+    color: var(--text-color-2);
+    outline-color: var(--accent-color);
+    outline-width: .1rem;
+    outline-style:solid;
+}
+.sidebar-button:active{
+    color: var(--text-color-2);
+    outline-color: var(--accent-color);
+    outline-width: .2rem;
+    outline-style:solid;
+}
+#theme-button{
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    color: var(--text-color-2);
+    background-color: var(--primary-bg-color);
+    width: 80%;
+    height: 5%;
+    border: none;
+    border-radius: .2rem;
+}
+divas {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: myAnimation;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes myAnimation {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
 }
