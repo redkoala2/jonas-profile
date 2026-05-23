@@ -1,0 +1,113 @@
+:root {
+  --primary-bg-color: blueviolet;
+  --text-color:rgb(213, 76, 255);
+  --text-color-2:#ff47e0;
+  --accent-color:#b4f747;
+}
+
+body{
+    background-image: linear-gradient(to right, #e3a5ff, #d16dff);
+}
+
+.main{
+    color: var(--text-color);
+}
+.sidebar{
+    background-color: rgb(245, 38, 245);
+    border-radius: .5rem;
+    box-shadow: inset;
+    display: flex; 
+    flex-direction: column;
+}
+.sidebar-button{
+    font-family: fantasy;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    color: var(--text-color-2);
+    background-color: var(--primary-bg-color);
+    width: 90%;
+    height: 8%;
+    border: none;
+    border-radius: .3rem;
+}
+.sidebar-button:hover{
+    color: var(--text-color-2);
+    outline-color: var(--accent-color);
+    outline-width: .1rem;
+    outline-style:solid;
+    animation: scale;
+    animation-duration: 0.05s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+.sidebar-button:active{
+    color: var(--text-color-2);
+    outline-color: var(--accent-color);
+    outline-width: .2rem;
+    outline-style:solid;
+}
+#theme-button{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 100%;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    color: rgb(122, 156, 248);
+    background-color: rgb(32, 21, 187);
+    width: 80%;
+    height: 5%;
+    border: none;
+    border-radius: .4rem;
+    font-family: "Archivo Black", sans-serif;
+}
+#theme-button:hover{
+  animation: scale;
+  animation-duration: 0.05s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+divas {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: myAnimation;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#jonas{
+    font-family: "Archivo Black", sans-serif;
+    color: #ee35ee;
+    animation-name: myAnimation;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-shadow: 5px 5px 0px #47b4f7;
+}
+
+@keyframes myAnimation {
+  0%   {}
+  25%  {transform: scale(90%);}
+  50%  {transform: scale(100%);}
+  75%  {transform: scale(110%);}
+  100% {transform: scale(120%);}
+}
+@keyframes scale {
+  from {
+    transform: translateY(0); /* Start position */
+  }
+  to {
+    transform: translateY(-20%); /* End position */
+    transform: scale(110%);
+  }
+}
