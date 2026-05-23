@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="normal.css">
+    <link rel="stylesheet" type="text/css" href="normal.css" id="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <title>Jonas' profile</title>
 </head>
 <body style="display: flex;">
     <div class="sidebar" style="width:10%; height: 97vh;">
-        <button class="sidebar-button" style="margin-top: 1rem;">item 1</button>
+        <button class="sidebar-button" style="margin-top: 1rem;" onclick="button1()">item 1</button>
         <br>
-        <button class="sidebar-button" style="margin-top: 1rem;">item 2</button>
+        <button class="sidebar-button" style="margin-top: 1rem;" onclick="button2()">item 2</button>
         <br>
-        <button class="sidebar-button" style="margin-top: 1rem;">item 3</button>
-        <button id="theme-button" class="sidebar-button" style="cursor: pointer;">theme</button>
+        <button class="sidebar-button" style="margin-top: 1rem;" onclick="button3()">item 3</button>
+        <button id="theme-button" class="sidebar-button" style="cursor: pointer;" onclick="styleButton()">theme</button>
     </div>
     <div class="main" id="main" style="margin-left: 10%;">
     <h1>Jonas</h1>
     <p>Hi, I am Jonas.....</p>
     </div>
 </body>
-<script src="main.js"></script>
-</html>
-
 <script src="main.js"></script>
 </html>
