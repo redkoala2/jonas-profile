@@ -38,6 +38,11 @@ body{
     outline-color: var(--accent-color);
     outline-width: .1rem;
     outline-style:solid;
+    animation: scale;
+    animation-duration: 0.05s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
 }
 .sidebar-button:active{
     color: var(--text-color-2);
@@ -48,15 +53,24 @@ body{
 #theme-button{
     text-decoration: none;
     font-weight: 600;
+    font-size: 100%;
     margin-left: 10%;
     margin-top: 10%;
     margin-bottom: 10%;
-    color: var(--text-color-2);
-    background-color: var(--primary-bg-color);
+    color: rgb(241, 145, 221);
+    background-color: rgb(159, 21, 187);
     width: 80%;
     height: 5%;
     border: none;
-    border-radius: .2rem;
+    border-radius: .4rem;
+    font-family: "Archivo Black", sans-serif;
+}
+#theme-button:hover{
+  animation: scale;
+  animation-duration: 0.05s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
 }
 divas {
   width: 100px;
@@ -72,9 +86,18 @@ divas {
 }
 
 @keyframes myAnimation {
-  0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:green; left:0px; top:200px;}
-  100% {background-color:red; left:0px; top:0px;}
+  0%   {background-color:rgb(159, 21, 187);}
+  25%  {background-color:rgb(124, 39, 141); transform: rotate(10deg);}
+  50%  {background-color:rgb(159, 21, 187); transform: rotate(-10deg);}
+  75%  {background-color:rgb(124, 39, 141); transform: rotate(10deg);}
+  100% {background-color:rgb(159, 21, 187); transform: rotate(-10deg);}
+}
+@keyframes scale {
+  from {
+    transform: translateY(0); /* Start position */
+  }
+  to {
+    transform: translateY(-20%); /* End position */
+    transform: scale(110%);
+  }
 }
