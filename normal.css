@@ -72,6 +72,16 @@ body{
   animation-direction: alternate;
   animation-fill-mode: forwards;
 }
+#jonas{
+    font-family: "Archivo Black", sans-serif;
+    color:#47b4f7;
+    animation-name: myAnimation;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+    text-shadow: 5px 5px 0px #ee35ee;
+}
 divas {
   width: 100px;
   height: 100px;
@@ -86,11 +96,11 @@ divas {
 }
 
 @keyframes myAnimation {
-  0%   {background-color:rgb(159, 21, 187);}
-  25%  {background-color:rgb(124, 39, 141); transform: rotate(10deg);}
-  50%  {background-color:rgb(159, 21, 187); transform: rotate(-10deg);}
-  75%  {background-color:rgb(124, 39, 141); transform: rotate(10deg);}
-  100% {background-color:rgb(159, 21, 187); transform: rotate(-10deg);}
+  0%   {}
+  25%  {transform: scale(90%);}
+  50%  {transform: scale(100%);}
+  75%  {transform: scale(110%);}
+  100% {transform: scale(120%);}
 }
 @keyframes scale {
   from {
