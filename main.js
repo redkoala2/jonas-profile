@@ -2,34 +2,42 @@
 //Sound Effect by <a href="https://pixabay.com/users/denielcz-50993549/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=463065">DenielCZ</a> from <a href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=463065">Pixabay</a>
 
 
-var theme = 'todo';
-
 const elementThemeButton = document.getElementById("theme-button");
 const styleLink = document.getElementById("style");
+const main1 = document.getElementById("main1");
+const main2 = document.getElementById("main2");
+const main3 = document.getElementById("main3");
+
+main2.style.display = "none";
+main3.style.display = "none";
 
 //elementThemeButton.innerHTML = "Cute mode!";
 
 function styleButton(){
     const elementThemeButton = document.getElementById("theme-button");
     const styleLink = document.getElementById("style");
-    const faviconLink = document.getElementById("favicon")
+    const faviconLink = document.getElementById("favicon");
     console.log("style link value:" + styleLink.getAttribute("href"))
     if(styleLink.getAttribute("href") == 'cute.css'){
         console.log("style = cute.css")
         styleLink.setAttribute("href", "normal.css");
         audio("normal")
         faviconLink.setAttribute("href", "favicon.png")
+        document.cookie = 'theme=normal; path=/*';
+        elementThemeButton.innerHTML = "Cute mode!";
     } else {
         console.log("style = normal.css")
         styleLink.setAttribute("href", "cute.css");
         audio('cute')
         faviconLink.setAttribute("href", "favicon-cute.png")
+        document.cookie = 'theme=cute; path=/*';
+        elementThemeButton.innerHTML = "Normal";
     }
     buttonClick()
 }
 
-    let cuteAudio = new Audio('cute.mp3');
-    let normalAudio = new Audio('normal.mp3');
+let cuteAudio = new Audio('cute.mp3');
+let normalAudio = new Audio('normal.mp3');
 
 function audio(type){
     cuteAudio.pause()
@@ -48,16 +56,43 @@ function audio(type){
     console.log("normal audio start")
     }
 }
+
 function buttonClick(){
     let audio = new Audio('click.mp3');
     audio.play();
 }
+
+const sidebarItem1 = document.getElementById('active1');
+const sidebarItem2 = document.getElementById('none2');
+const sidebarItem3 = document.getElementById('none3');
+
 function button1(){
+    sidebarItem1.setAttribute('id', 'active1')
+    sidebarItem2.setAttribute('id', 'none2')
+    sidebarItem3.setAttribute('id', 'none3')
+
     buttonClick()
+    main1.style.display = "block";
+    main2.style.display = "none";
+    main3.style.display = "none";
 }
 function button2(){
+    sidebarItem1.setAttribute('id', 'none1')
+    sidebarItem2.setAttribute('id', 'active2')
+    sidebarItem3.setAttribute('id', 'none3')
+
     buttonClick()
+    main1.style.display = "none";
+    main2.style.display = "block";
+    main3.style.display = "none";
 }
 function button3(){
+    sidebarItem1.setAttribute('id', 'none1')
+    sidebarItem2.setAttribute('id', 'none2')
+    sidebarItem3.setAttribute('id', 'active3')
+
     buttonClick()
+    main1.style.display = "none";
+    main2.style.display = "none";
+    main3.style.display = "block";
 }
