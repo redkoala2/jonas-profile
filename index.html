@@ -12,16 +12,24 @@
 </head>
 <body style="display: flex;">
     <div class="sidebar" style="width:10%; height: 97vh;">
-        <button class="sidebar-button" style="margin-top: 1rem;" onclick="button1()" id="active">home</button>
+        <button class="sidebar-button" style="margin-top: 1rem;" onclick="button1()" id="active1">home</button>
         <br>
-        <button class="sidebar-button" style="margin-top: 1rem;" onclick="button2()">extra info</button>
+        <button class="sidebar-button" style="margin-top: 1rem;" onclick="button2()" id="none2">extra info</button>
         <br>
-        <button class="sidebar-button" style="margin-top: 1rem;" onclick="button3()">random stuff</button>
-        <button id="theme-button" class="sidebar-button" style="cursor: pointer;" onclick="styleButton()">theme</button>
+        <button class="sidebar-button" style="margin-top: 1rem;" onclick="button3()" id="none3">random stuff</button>
+        <button id="theme-button" class="sidebar-button" style="cursor: pointer;" onclick="styleButton()">Cute mode!</button>
     </div>
-    <div class="main" id="main" style="margin-left: 10%;">
+    <div class="main" id="main1" style="margin-left: 10%;">
     <p id="jonas" style="font-size:100px; margin-top: 2rem;">Jonas</p>
     <p>Hi, I am Jonas.....</p>
+    </div>
+        <div class="main" id="main2" style="margin-left: 10%;">
+    <p id="jonas" style="font-size:100px; margin-top: 2rem;">Info</p>
+    <p>Extra info about me or smt idk</p>
+    </div>
+        <div class="main" id="main3" style="margin-left: 10%;">
+    <p id="jonas" style="font-size:100px; margin-top: 2rem;">Random stuff</p>
+    <p>Random stuff to not get bored :D</p>
     </div>
 </body>
 <script src="main.js"></script>
