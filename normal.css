@@ -32,6 +32,7 @@ body{
     height: 8%;
     border: none;
     border-radius: .3rem;
+    overflow: hidden;
 }
 .sidebar-button:hover{
     color: var(--text-color-2);
@@ -64,6 +65,7 @@ body{
     border: none;
     border-radius: .4rem;
     font-family: "Archivo Black", sans-serif;
+    overflow: hidden;
 }
 #theme-button:hover{
   animation: scale;
@@ -73,14 +75,50 @@ body{
   animation-fill-mode: forwards;
 }
 #jonas{
-    font-family: "Archivo Black", sans-serif;
-    color:#47b4f7;
-    animation-name: myAnimation;
+  font-family: "Archivo Black", sans-serif;
+  color:#47b4f7;
+  animation-name: myAnimation;
   animation-duration: 10s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-    text-shadow: 5px 5px 0px #ee35ee;
+  text-shadow: 5px 5px 0px #ee35ee;
+}
+#active1{
+  outline-color: var(--accent-color);
+  outline-width: .1rem;
+  outline-style: solid;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+#active1:active{
+    outline-color: red;
+    outline-width: .2rem;
+    outline-style: solid;
+}
+#active2{
+  outline-color: var(--accent-color);
+  outline-width: .1rem;
+  outline-style: solid;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+#active2:active{
+    outline-color: red;
+    outline-width: .2rem;
+    outline-style: solid;
+}
+#active3{
+  outline-color: var(--accent-color);
+  outline-width: .1rem;
+  outline-style: solid;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+#active3:active{
+    outline-color: red;
+    outline-width: .2rem;
+    outline-style: solid;
 }
 divas {
   width: 100px;
