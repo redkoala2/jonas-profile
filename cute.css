@@ -95,6 +95,43 @@ divas {
     text-shadow: 5px 5px 0px #47b4f7;
 }
 
+#active1{
+  outline-color: var(--accent-color);
+  outline-width: .1rem;
+  outline-style: solid;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+#active1:active{
+    outline-color: red;
+    outline-width: .2rem;
+    outline-style: solid;
+}
+#active2{
+  outline-color: var(--accent-color);
+  outline-width: .1rem;
+  outline-style: solid;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+#active2:active{
+    outline-color: red;
+    outline-width: .2rem;
+    outline-style: solid;
+}
+#active3{
+  outline-color: var(--accent-color);
+  outline-width: .1rem;
+  outline-style: solid;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+#active3:active{
+    outline-color: red;
+    outline-width: .2rem;
+    outline-style: solid;
+}
+
 @keyframes myAnimation {
   0%   {}
   25%  {transform: scale(90%);}
