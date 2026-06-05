@@ -13,6 +13,9 @@ main3.style.display = "none";
 
 //elementThemeButton.innerHTML = "Cute mode!";
 
+document.getElementById('all').style.visibility='visible';
+document.getElementById('noscript').style.visibility='hidden';
+
 function styleButton(){
     const elementThemeButton = document.getElementById("theme-button");
     const styleLink = document.getElementById("style");
