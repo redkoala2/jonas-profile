@@ -11,7 +11,13 @@
     <title>Jonas' profile</title>
 </head>
 <body style="display: flex;">
-    <main id="all" style="visibility: hidden; display: flex; width:100%;">
+    <div id="noscript">
+    <h1 style="font-weight: 600; color: aqua;">You take browser privacy and security serious!</h1>
+    <p style="color: white;">It looks like this site doesn't have acces to javascript, you can either choose to enable javascript to go to the page with full features or choose to visit the page that doesn't use javascript with less features</p>
+    <a href="https://jonas-profile.42web.io/index.html" style="background-color: greenyellow; text-decoration: none; border-radius: .4rem; height: 5rem;">go to site with javascript (all features)</a>
+    <a href="https://jonas-profile.42web.io/noscript.html" style="background-color: red; text-decoration: none; border-radius: .4rem;">go to the site without javascript (not all features)</a>
+</div>
+    <div id="all" style="display: none; width:100%;">
     <div class="sidebar" style="width:10%; height: 97vh;">
         <button class="sidebar-button" style="margin-top: 1rem;" onclick="button1()" id="active1">home</button>
         <br>
@@ -22,20 +28,41 @@
     </div>
     <div class="main" id="main1" style="margin-left: 10%;">
     <p id="jonas" style="font-size:100px; margin-top: 2rem;">Jonas</p>
-    <p>Hi, I am Jonas.....</p>
+    <p id="discription"></p>
+    <p>Junior developer</p>
     </div>
         <div class="main" id="main2" style="margin-left: 10%;">
     <p id="jonas" style="font-size:100px; margin-top: 2rem;">Info</p>
-    <p>Extra info about me or smt idk</p>
+    <p id="like-title">Things I support:</p>
+    <div class="like-list" id="like-list" style="display: block;">
+    <a target="_blank" rel="noopener noreferrer" href="https://be-clippy.com/">Clippy movement</a>
+    <br>
+    <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/LGBTQ_people#Scope_and_terminology">LGBTQIA+ people</a>
+    <br>
+    <a target="_blank" rel="noopener noreferrer" href="https://mullvad.net/en/why-privacy-matters">Mullvad</a>
+    <br>
+    <a target="_blank" rel="noopener noreferrer" href="https://opensource.com/resources/linux">Linux</a>
+    </div>
+    <p id="hate-title">Things I am against:</p>
+    <div class="hate-list" id="hate-list" style="display: block;">
+    <a target="_blank" rel="noopener noreferrer" href="https://mullvad.net/en/why-privacy-matters/nothing-to-hide">Data gobbling companies</a>
+    <br>
+    <a target="_blank" rel="noopener noreferrer" href="site.com">2</a>
+    <br>
+    <a target="_blank" rel="noopener noreferrer" href="site.com">3</a>
+    </div>
     </div>
         <div class="main" id="main3" style="margin-left: 10%;">
     <p id="jonas" style="font-size:100px; margin-top: 2rem;">Random stuff</p>
     <p>Random stuff to not get bored :D</p>
     </div>
-</main>
-<div id="noscript" style="visibility: visible;">
-    <button>no js click me</button>
-</div>
+    </div>
+    <div id="popup" style="display: none;">
+        <p style="color: aqua; font-weight: 600; font-size: 5vh;">Would you like sound for the full experience?</p>
+        <p style="color: white; font-size: 2vh;">This makes the site more imersive, but without permission could</p>
+        <button id="popup-button" onclick="audioNo()" style="background-color: orangered; border-radius: .3rem; text-decoration: none; border: none; margin: 1rem; height: 20vh; width: 30vh; font-size: 5vh; font-weight: 700;">no</button>
+        <button id="popup-button" onclick="audioYes()" style="background-color: yellowgreen; border-radius: .3rem; text-decoration: none; border: none; margin: 1rem; height: 20vh; width: 30vh; font-size: 5vh; font-weight: 700;">yes</button>
+    </div>
 </body>
 <script src="main.js"></script>
 </html>
