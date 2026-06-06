@@ -120,6 +120,25 @@ body{
     outline-width: .2rem;
     outline-style: solid;
 }
+#popup-button:hover {
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color: whitesmoke;
+  text-decoration: underline;
+}
+
+#hate-title{
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+#like-title{
+  font-weight: 700;
+}
+
 divas {
   width: 100px;
   height: 100px;
