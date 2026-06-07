@@ -139,3 +139,10 @@ function button3(){
     main2.style.display = "none";
     main3.style.display = "block";
 }
+
+function joke(){
+    const jokeElement = document.getElementById("joke-text");
+    jokeElement.innerHTML = `
+I accidentally set my terminal font to Comic Sans. Now every error message looks like it's about to cry.
+ My cybersecurity threat model: hackers and also people who don't appreciate my desktop icons arranged by color. My commit message: "Fixed it"; my future self: "Lies."`;
+}
