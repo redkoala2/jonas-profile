@@ -1,0 +1,243 @@
+:root {
+  --primary-bg-color: darkblue;
+  --text-color:rgb(245, 231, 220);
+  --text-color-2:#47b4f7;
+  --accent-color:#b4f747;
+}
+
+body{
+    background-image: linear-gradient(to right, #12224e, #041136);
+}
+
+.main{
+    color: var(--text-color);
+}
+.sidebar{
+    background-color: rgb(0, 174, 255);
+    border-radius: .5rem;
+}
+
+#sidebar{
+    position: fixed;
+    left: 5%;
+    right: 5%;
+    top: 88%;
+    margin-bottom: .2rem;
+}
+
+.sidebar-button{
+    font-family: fantasy;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: var(--text-color-2);
+    width: 20%;
+    height: 3rem;
+    border: none;
+    border-radius: .2rem;
+    overflow: hidden;
+}
+.sidebar-button:hover{
+    animation: scale;
+    animation-duration: 0.05s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+.sidebar-button:active{
+    color: var(--text-color-2);
+    animation: scale;
+    animation-duration: 0.05s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+#theme-button{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 100%;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    color: rgb(241, 145, 221);
+    background-color: rgb(159, 21, 187);
+    width: 80%;
+    height: 5%;
+    border: none;
+    border-radius: .4rem;
+    font-family: "Archivo Black", sans-serif;
+    overflow: hidden;
+}
+#theme-button:hover{
+  animation: scale;
+  animation-duration: 0.05s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+#jonas{
+  font-family: "Archivo Black", sans-serif;
+  color:#47b4f7;
+  animation-name: myAnimation;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  text-shadow: 5px 5px 0px #ee35ee;
+}
+
+#random-stuff{
+  font-family: "Archivo Black", sans-serif;
+  color:#47b4f7;
+  text-shadow: 5px 5px 0px #ee35ee;
+}
+
+#active1{
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+#active1:active{
+    outline-color: red;
+    outline-width: .2rem;
+    outline-style: solid;
+}
+#active2{
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+#active2:active{
+    outline-color: red;
+    outline-width: .2rem;
+    outline-style: solid;
+}
+#active3{
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+#active3:active{
+    outline-color: red;
+    outline-width: .2rem;
+    outline-style: solid;
+}
+#popup-button:hover {
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color: whitesmoke;
+  text-decoration: underline;
+}
+
+#hate-title{
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+#like-title{
+  font-weight: 700;
+}
+
+#joke-div{
+  outline: #47b4f7;
+  outline-width: .4rem;
+  outline-style: solid;
+  border-radius: .2rem;
+}
+
+#joke-button{
+    font-family: fantasy;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: var(--text-color-2);
+    background-color: var(--primary-bg-color);
+    width: 60%;
+    height: 40%;
+    border: none;
+    border-radius: .3rem;
+    overflow: hidden;
+}
+
+#joke-button:hover{
+    color: var(--text-color-2);
+    outline-color: var(--accent-color);
+    outline-width: .1rem;
+    outline-style:solid;
+    animation: scale2;
+    animation-duration: 0.05s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+#joke-button:active{
+    color: var(--text-color-2);
+    outline-style: none;
+    animation-name: ColorChange;
+    animation-duration: 0.05s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+#joke-text{
+  margin-left: 3%;
+}
+
+divas {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: myAnimation;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes myAnimation {
+  0%   {}
+  25%  {transform: scale(90%);}
+  50%  {transform: scale(95%);}
+  75%  {transform: scale(100%);}
+  100% {transform: scale(95%);}
+}
+
+@keyframes ColorChange {
+  0% {background-color: #12224e;}
+  10% {background-color:#122a4e;}
+  20% {background-color:#153a64;}
+  30% {background-color:#124b80;}
+  40% {background-color:#147391;}
+  50% {background-color:#13aaaa;}
+  60% {background-color:#15af8e;}
+  70% {background-color:#109150;}
+  80% {background-color:#139e59;}
+  90% {background-color:#5eaf12;}
+  100% {background-color:#b4f747;}
+}
+
+@keyframes scale {
+  from {
+    transform: translateY(0); /* Start position */
+  }
+  to {
+    transform: translateY(-20%); /* End position */
+    transform: scale(110%);
+  }
+}
+@keyframes scale2 {
+  from {
+    transform: translateY(0); /* Start position */
+  }
+  to {
+    transform: translateY(-2.5%); /* End position */
+    transform: scale(105%);
+  }
+}
