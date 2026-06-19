@@ -13,6 +13,8 @@ main3.style.display = "none";
 console.log(window.innerWidth, window.innerHeight);
 //elementThemeButton.innerHTML = "Cute mode!";
 
+var jokeNumber = 0;
+
 document.getElementById('all').style.display='none';
 document.getElementById('noscript').style.display='none';
 document.getElementById('popup').style.display='block';
@@ -141,8 +143,22 @@ function button3(){
 }
 
 function joke(){
+
+// jokes (array)
+const jokes =[]
+jokes[0] = `I accidentally set my terminal font to Comic Sans. Now every error message looks like it's about to cry.`;
+jokes[1] = `My cybersecurity threat model: hackers and also people who don't appreciate my desktop icons arranged by color.`;
+jokes[2] = `My commit message: "Fixed it"; my future self: "Lies."`;
+jokes[6] = `My code is like a femboy: soft, cute and occasionally breaks for no reason. Then I cry, fix it, and pretent it never happend. >~<`;
+jokes[4] = `Why was the math book sad? Too many problems!`;
+jokes[5] = `Parallel lines have so much in common… too bad they'll never meet.`;
+jokes[3] = `How do you know the moon is broke? It's down to its last quarter.`;
+jokes[7] = `Why did the student eat the math homework? Teacher said it was a piece of cake`;
+
     const jokeElement = document.getElementById("joke-text");
-    jokeElement.innerHTML = `
-I accidentally set my terminal font to Comic Sans. Now every error message looks like it's about to cry.
- My cybersecurity threat model: hackers and also people who don't appreciate my desktop icons arranged by color. My commit message: "Fixed it"; my future self: "Lies."`;
+    jokeElement.innerHTML = jokes[jokeNumber];
+    jokeNumber = jokeNumber + 1;
+    if(jokeNumber > 7){
+        jokeNumber = 0;
+    }
 }
