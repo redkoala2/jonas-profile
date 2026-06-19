@@ -92,6 +92,7 @@ body{
   font-family: "Archivo Black", sans-serif;
   color:#47b4f7;
   text-shadow: 5px 5px 0px #ee35ee;
+  font-size: 10vh;
 }
 
 #active1{
@@ -156,8 +157,8 @@ a{
     margin-bottom: 1%;
     color: var(--text-color-2);
     background-color: var(--primary-bg-color);
-    width: 60%;
-    height: 40%;
+    width: 50%;
+    height: 60%;
     border: none;
     border-radius: .3rem;
     overflow: hidden;
@@ -182,10 +183,21 @@ a{
     animation-duration: 0.05s;
     animation-timing-function: linear;
     animation-direction: alternate;
+
 }
 
 #joke-text{
   margin-left: 3%;
+}
+
+#modrinth{
+  outline-color: #30b37cff;
+  outline-width: .1rem;
+  outline-style: solid;
+}
+
+#modrinth-logo{
+  width: 20%;
 }
 
 divas {
