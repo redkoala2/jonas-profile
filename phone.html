@@ -21,15 +21,29 @@
 <div id="all" style="display: none; width:100%;">
 
     <div class="sidebar" id="sidebar">
-        <img class="sidebar-button" style="margin-top: 1rem;" onclick="button1()" id="active1" src="cute-info-icon.svg"></img>
+        <img class="sidebar-button" style="margin-top: 1rem;" onclick="button1()" id="active1" src="cute-info-home.svg"></img>
         <img class="sidebar-button" style="margin-top: 1rem;" onclick="button2()" id="none2" src="cute-info-icon.svg"></img>
-        <img class="sidebar-button" style="margin-top: 1rem;" onclick="button3()" id="none3" src="cute-info-icon.svg"></img>
+        <img class="sidebar-button" style="margin-top: 1rem;" onclick="button3()" id="none3" src="cute-info-random.svg"></img>
     </div>
 
     <div class="main" id="main1" style="margin-bottom: 10%;">
         <p id="jonas" style="font-size:100px; margin-top: 2rem;">Jonas</p>
         <p id="discription"></p>
         <p>Junior developer</p>
+
+            <div id="modrinth">
+                <img id="modrinth-logo" src="mark-light.svg" onclick='window.open("https://modrinth.com", "_blank", "noopener,noreferrer")'></img>
+                <div id="pride-foods">
+
+                </div>
+                <div id="slime">
+
+                </div>
+                <div id="pyriet-glyriet">
+
+                </div>
+
+            </div>
     </div>
 
     <div class="main" id="main2" style="margin-bottom: 10%;">
@@ -46,21 +60,11 @@
     -       <a target="_blank" rel="noopener noreferrer" href="https://opensource.com/resources/linux">Linux</a>
         </div>
 
-        <p id="hate-title">Things I am against:</p>
-
-        <div class="hate-list" id="hate-list" style="display: block;">
-    -       <a target="_blank" rel="noopener noreferrer" href="https://mullvad.net/en/why-privacy-matters/nothing-to-hide">Data gobbling companies</a>
-            <br>
-    -       <a target="_blank" rel="noopener noreferrer" href="site.com">2</a>
-            <br>
-    -       <a target="_blank" rel="noopener noreferrer" href="site.com">3</a>
-        </div>
-
     </div>
 
-    <div class="main" id="main3" style="margin-left: 10%;">
+    <div class="main" id="main3" style="margin-bottom: 10%;">
 
-        <p id="random-stuff" style="font-size:100px; margin-top: 2rem;">Random stuff</p>
+        <p id="random-stuff">Random stuff</p>
         <p>Random stuff to not get bored :D</p>
         <div id="joke-div" class="joke-div">
             <p id="joke-text">joke</p>
